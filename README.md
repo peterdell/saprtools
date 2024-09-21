@@ -80,9 +80,11 @@ All tools were tested on a recent Linux distribution, but should also work with 
 Native Windows with cygwin has been tested. Native windows with MSYS2 has not been tested yet, but some known portability issues were taken into consideration during development, like using "rb" with fopen() to open in binary mode.
 Each directory contains its own README.md with sometimes more detailed instructions, a short usage example, and the help output listing all of its options.
 The following lines need to be present in your "~/.gitconfig" to see binary differences for the involved files in git.
-`[diff "hex"]`
-`textconv = hexdump -v -C`
-`binary = true`     
+```
+[diff "hex"]
+  textconv = hexdump -v -C
+  binary = true     
+```
 
 ### Credits
 
